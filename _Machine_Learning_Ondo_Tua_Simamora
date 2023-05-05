@@ -1,0 +1,17 @@
+from sklearn.datasets import load_breast_cancer
+
+# Load the dataset
+data = load_breast_cancer()
+
+# Print the features and target names
+print("Features:", data.feature_names)
+print("Target:", data.target_names)
+
+# Print the shape of the data
+print("Data shape:", data.data.shape)
+
+# Print the first 5 rows of the data
+print("First 5 rows of data:\n", data.data[:5])
+
+# Print the target values for the first 5 rows
+print("Target values for first 5 rows:\n", data.target[:5])
